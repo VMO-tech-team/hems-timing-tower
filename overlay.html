@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlay</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <table class="driver-table">
+      <thead>
+        <tr>
+          <!-- Status column (empty cell) -->
+          <td class="status-column"></td>
+        </tr>
+        <tr>
+          <!-- Status column (empty cell) -->
+          <td class="status-column"></td>
+
+          <!-- Cell spanning from the second column to the next-to-last column -->
+          <!-- Adjust colspan to match the number of columns minus the status and clock columns -->
+          <td colspan="6" class="rubriker-container2">
+            <div class="tidkvar-row session-info">
+              <span id="sessionType"></span>
+              <span id="raceProgress"></span>
+            </div>
+          </td>
+
+          <!-- Clock column (empty cell) -->
+          <!-- <td class="clock-column"></td> -->
+        </tr>
+      </thead>
+      <tbody id="driverList">
+        <!-- JavaScript will generate driver rows here -->
+      </tbody>
+    </table>
+    <script
+      src="https://kit.fontawesome.com/bd43e88a94.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="overlay.js"></script>
+  </body>
+</html>
